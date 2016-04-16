@@ -14,6 +14,11 @@ set noswapfile
 set smarttab 
 set autoindent
 set noruler
+set incsearch
+set showmatch
+set hlsearch
+set noshowmode
+set backspace=indent,eol,start
 set laststatus=2
 colorscheme jellybeans
 set background=dark
