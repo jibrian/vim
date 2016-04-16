@@ -1,0 +1,24 @@
+execute pathogen#infect()
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+filetype plugin on
+
+syntax on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set relativenumber
+set mouse=a
+set noswapfile
+set smarttab 
+set autoindent
+set noruler
+set laststatus=2
+colorscheme jellybeans
+set background=dark
+
+autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2
+autocmd BufRead,BufNewFile *.html.erb setlocal tabstop=2 shiftwidth=2
+autocmd BufRead,BufNewFile *.js.jsx setlocal tabstop=2 shiftwidth=2
+
+map <f2> :NERDTreeToggle<CR>
