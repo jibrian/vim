@@ -29,7 +29,15 @@ set background=dark
 autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.html.erb setlocal tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.js.jsx setlocal tabstop=2 shiftwidth=2
+autocmd BufRead,BufNewFile *.ts setlocal tabstop=2 shiftwidth=2
 
 map <f2> :NERDTreeToggle<CR>
 map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
 
+let mapleader=','
+if exists(":Tabularize")
+    nmap <Leader>a= :Tabularize /=<CR>
+    vmap <Leader>a= :Tabularize /=<CR>
+    nmap <Leader>a: :Tabularize /:\zs<CR>
+    vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
