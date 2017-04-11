@@ -3,8 +3,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ag_working_path_mode="r"
 let g:airline_powerline_fonts = 1 
-"let g:vdebug_options={} 
-let g:vdebug_options = { 'ide_key': 'vagrant', 'break_on_open': 0, 'port' : 9002, 'server' : '', 'path_maps' : {'/home/vagrant/Code/moonlight': '/Users/brianji/sites/moonlight'} }
 
 filetype plugin on
 syntax on
