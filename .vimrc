@@ -2,7 +2,6 @@ execute pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:ag_working_path_mode="r"
-"let g:airline_powerline_fonts = 1 
 let g:Powerline_symbols = 'fancy'
 
 filetype plugin on
