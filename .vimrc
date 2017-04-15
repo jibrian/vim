@@ -24,6 +24,9 @@ set laststatus=2
 colorscheme jellybeans
 set background=dark
 
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
+
 autocmd Filetype ruby setlocal tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.html.erb setlocal tabstop=2 shiftwidth=2
 autocmd BufRead,BufNewFile *.js.jsx setlocal tabstop=2 shiftwidth=2
