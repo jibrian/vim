@@ -68,7 +68,7 @@ autocmd BufRead,BufNewFile *.ts setlocal tabstop=2 shiftwidth=2
 
 let mapleader=','
 
-map <leader>p :set paste<cr>o<esc>"*]p:set nopaste<cr>
+map <leader>p :set paste<cr>"*]p:set nopaste<cr>
 
 if exists(":Tabularize")
     nmap <Leader>a= :Tabularize /=<CR>
